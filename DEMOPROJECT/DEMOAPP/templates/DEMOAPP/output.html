@@ -1,0 +1,14 @@
+{% extends 'DEMOAPP/home.html' %}
+
+{% block content %}
+<script>
+    x = {{ x }}
+
+    y = {{ y }}
+
+    z = {{ z }}
+
+    var data_z1 = {x:x, y: y, z: z, type: 'surface'};
+    Plotly.newPlot('graph', [data_z1]);
+</script>
+{% endblock %}

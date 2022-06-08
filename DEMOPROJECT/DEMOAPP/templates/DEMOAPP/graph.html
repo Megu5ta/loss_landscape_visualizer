@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    </head>
+    <body>
+    <div class="wrapper">
+        <div id="chart"></div>
+        <script>
+			z1 = [
+			    [1,1,1],
+				[1,2,1],
+				[1,1,1]
+			];
+
+			x1 = [
+				[0, 2, 4],
+				[0, 2, 4],
+				[0, 2, 4]
+			];
+
+			y1 = [
+				[0, 0, 0],
+				[1, 1, 1],
+				[2, 2, 2]
+			];
+
+			var data_z1 = {x:x1, y: y1, z: z1, type: 'surface'};
+			Plotly.newPlot('chart', [data_z1]);
+        </script>
+    </div>
+    </body>
+</html>
